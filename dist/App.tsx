@@ -49,8 +49,6 @@ import TextShadowAnim from './components/Text/TextShadowAnim/TextShadowAnim';
 import TextAriseHidden from './components/Text/TextAriseHideen/TextAriseHidden';
 import BallDrop from './components/BallDrop/BallDrop';
 import Tree from './components/Tree/Tree';
-import Parallex from 'react-normal-ui/src/components/Parallex/Parallex';
-// import Parallex from './components/Parallex/Parallex';
 
 
 
@@ -105,7 +103,6 @@ function App() {
       {/* <TextAriseHidden /> */}
       {/* <BallDrop /> */}
       {/* <Tree /> */}
-      <Parallex /> 
       {/* <Practice /> */}
 
 
