@@ -1,0 +1,188 @@
+.mud {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tree {
+    display: flex;
+    gap: 60px;
+}
+
+.flower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.flower:nth-child(1) {
+    transform: rotate(-110deg);
+    top: 40px;
+    z-index: 1000;
+}
+
+.flower:nth-child(2) {
+    top: -30px;
+}
+
+.flower:nth-child(3) {
+    transform: rotate(110deg);
+    top: 80px;
+    left: 7px;
+}
+
+.leaf {
+    width: 20px;
+    height: 45px;
+    position: absolute;
+    border-radius: 50%;
+    transform-origin: bottom;
+    z-index: 1300;
+}
+
+.leaf:nth-child(1) {
+    background: linear-gradient(to left bottom, #ff43b6, #4d1337);
+    transform: rotate(30deg);
+    animation: anima 5s ease alternate;
+}
+
+.leaf:nth-child(2) {
+    background: linear-gradient(to left bottom, #ff43b6, #4d1337);
+}
+
+.leaf:nth-child(3) {
+    background: linear-gradient(to left bottom, #ff43b6, #4d1337);
+    transform: rotate(-30deg);
+    animation: anima2 5s ease alternate;
+}
+
+.leaf:nth-child(4) {
+    /* top: 10px; */
+    left: -130px;
+    background: linear-gradient(to left bottom, rgb(255, 67, 182, 0.6), #4d1337);
+    animation: anima3 5s cubic-bezier(1, 0, .58, .87);
+}
+
+.flower:nth-child(2) .leaf:nth-child(1) {
+    background: linear-gradient(to left bottom, #ad2be0, #360c47);
+    animation: anima 5s ease alternate;
+}
+
+.flower:nth-child(2) .leaf:nth-child(2) {
+    background: linear-gradient(to left bottom, #ad2be0, #360c47);
+}
+
+.flower:nth-child(2) .leaf:nth-child(3) {
+    background: linear-gradient(to left bottom, #ad2be0, #360c47);
+    animation: anima2 5s ease alternate;
+}
+
+.flower:nth-child(3) .leaf:nth-child(1) {
+    background: linear-gradient(to left bottom, #82fdff, #002021);
+    animation: anima 5s ease alternate;
+}
+
+.flower:nth-child(3) .leaf:nth-child(2) {
+    background: linear-gradient(to left bottom, #82fdff, #002021);
+}
+
+.flower:nth-child(3) .leaf:nth-child(3) {
+    background: linear-gradient(to left bottom, #82fdff, #002021);
+    animation: anima2 5s ease alternate;
+}
+
+@keyframes anima {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(30deg);
+    }
+}
+
+@keyframes anima1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-30deg);
+    }
+}
+
+@keyframes anima2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-30deg);
+    }
+}
+
+@keyframes anima3 {
+    0% {
+        left: -10px;
+        background: linear-gradient(to left bottom, #ff43b6, #4d1337);
+    }
+
+    100% {
+        left: -130px;
+        background: linear-gradient(to left bottom, #ff43b6, #4d1337);
+    }
+}
+
+.stick {
+    position: absolute;
+    width: 240px;
+    height: 3.5px;
+    border-radius: 15px;
+    bottom: 28px;
+    right: 58px;
+    transform: rotate(-60deg);
+    z-index: 1300;
+}
+
+.stick1 {
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    border-top: 4px solid #cb3591;
+    bottom: -108px;
+    right: -5px;
+    border-radius: 50%;
+    transform: rotate(40deg);
+}
+
+.stick2 {
+    position: absolute;
+    width: 80px;
+    height: 45px;
+    border-top: 4px solid #5dbcbf;
+    bottom: -51px;
+    right: -80px;
+    border-radius: 50%;
+    transform: rotate(-157deg);
+}
+
+.water {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    bottom: 17%;
+    left: 22%;
+    transform: rotateX(40deg);
+}
+
+#wave {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 46%;
+    left: 40%;
+}
