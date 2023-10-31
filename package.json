@@ -1,5 +1,5 @@
 {
-  "name": "react-menubar",
+  "name": "react-menu-component",
   "version": "0.1.0",
   "private": false,
   "main": "dist/index.js",
@@ -47,8 +47,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "microbundle": "^0.15.1"
   }
 }
